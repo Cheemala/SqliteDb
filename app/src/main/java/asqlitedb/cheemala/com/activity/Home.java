@@ -46,9 +46,10 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         //Create instance for users data
         userList = new ArrayList<>();
         //Create instance for toolbar
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
         //Create instance for recycler view
-        usrLstRcyrVw = (RecyclerView) findViewById(R.id.usrs_list_rcyclrVw);
+        usrLstRcyrVw = findViewById(R.id.usrs_list_rcyclrVw);
+        //Create instances for UI elements & their click listeners
         adUsrNameEdt = toolbar.findViewById(R.id.ad_itm_edt);
         addUsrBtn = toolbar.findViewById(R.id.add_usr_btn);
         addUsrBtn.setOnClickListener(this);
