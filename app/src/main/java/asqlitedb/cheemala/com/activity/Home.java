@@ -35,6 +35,7 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        //Need to initialise the views first
         initialiseViews();
         showAddedUsers();
 
