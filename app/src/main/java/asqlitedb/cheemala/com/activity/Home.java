@@ -38,13 +38,16 @@ public class Home extends AppCompatActivity implements View.OnClickListener{
         //Need to initialise the views first
         initialiseViews();
         showAddedUsers();
-
     }
 
     private void initialiseViews() {
+        //Get database instance
         appDb = new AppDb(Home.this);
+        //Create instance for users data
         userList = new ArrayList<>();
+        //Create instance for toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //Create instance for recycler view
         usrLstRcyrVw = (RecyclerView) findViewById(R.id.usrs_list_rcyclrVw);
         adUsrNameEdt = toolbar.findViewById(R.id.ad_itm_edt);
         addUsrBtn = toolbar.findViewById(R.id.add_usr_btn);
